@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: moon-service-dev
+server:
+  port: 1776
+
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${random.uuid}:dev
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
