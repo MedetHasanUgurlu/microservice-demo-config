@@ -2,7 +2,7 @@ spring:
   application:
     name: moon-service-dev
 server:
-  port: 1776
+  port: 8080
 
 eureka:
   instance:
